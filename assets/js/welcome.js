@@ -1,6 +1,7 @@
 /**
  * Welcome Page - Interactive Features
- * Reusable across guest/landing pages
+ * Pure vanilla JS, no dependencies
+ * Compatible with the deployed HTML structure
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -27,15 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const taglines = [
             '10+ years of experience building scalable web applications',
-            'From architecture to deployment — full-stack expertise',
+            'From architecture to deployment \u2014 full-stack expertise',
             'Passionate about clean code & great user experiences',
-            'Laravel · React · MySQL — the full stack toolkit',
+            'Laravel \u00B7 React \u00B7 MySQL \u2014 the full stack toolkit',
         ];
 
         let roleIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
         let taglineIndex = 0;
+        let typingTimeout = null;
 
         function typeEffect() {
             try {
@@ -46,10 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     charIndex++;
                     if (charIndex === currentRole.length) {
                         isDeleting = true;
-                        setTimeout(typeEffect, 2000);
+                        typingTimeout = setTimeout(typeEffect, 2000);
                         return;
                     }
-                    setTimeout(typeEffect, 40);
+                    typingTimeout = setTimeout(typeEffect, 40);
                 } else {
                     typingElement.textContent = currentRole.substring(0, charIndex - 1);
                     charIndex--;
@@ -60,19 +62,19 @@ document.addEventListener('DOMContentLoaded', function() {
                             taglineIndex = (taglineIndex + 1) % taglines.length;
                             taglineElement.textContent = taglines[taglineIndex];
                         }
-                        setTimeout(typeEffect, 500);
+                        typingTimeout = setTimeout(typeEffect, 500);
                         return;
                     }
-                    setTimeout(typeEffect, 20);
+                    typingTimeout = setTimeout(typeEffect, 20);
                 }
             } catch (err) {
                 console.error('[Portfolio] Typing effect error:', err);
             }
         }
 
-        setTimeout(typeEffect, 1000);
+        typingTimeout = setTimeout(typeEffect, 1000);
     } else {
-        console.warn('[Portfolio] Typing element not found');
+        console.warn('[Portfolio] Typing element (#typing-text) not found');
     }
 
     // ========================================
@@ -84,14 +86,18 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('[Portfolio] Parallax effect initialized (' + orbs.length + ' orbs)');
 
         document.addEventListener('mousemove', function(e) {
-            const x = (e.clientX / window.innerWidth) * 20 - 10;
-            const y = (e.clientY / window.innerHeight) * 20 - 10;
-            orbs.forEach(function(orb, i) {
-                orb.style.transform = 'translate(' + (x * (i + 1) * 0.2) + 'px, ' + (y * (i + 1) * 0.2) + 'px)';
-            });
+            try {
+                const x = (e.clientX / window.innerWidth) * 20 - 10;
+                const y = (e.clientY / window.innerHeight) * 20 - 10;
+                orbs.forEach(function(orb, i) {
+                    orb.style.transform = 'translate(' + (x * (i + 1) * 0.2) + 'px, ' + (y * (i + 1) * 0.2) + 'px)';
+                });
+            } catch (err) {
+                console.error('[Portfolio] Parallax error:', err);
+            }
         });
     } else {
-        console.warn('[Portfolio] No orb elements found');
+        console.warn('[Portfolio] No .orb elements found');
     }
 
     // ========================================
@@ -129,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     } else {
-        console.warn('[Portfolio] No job cards found');
+        console.warn('[Portfolio] No .job-card elements found');
     }
 
     console.log('[Portfolio] All features initialized');
