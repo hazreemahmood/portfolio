@@ -1,0 +1,73 @@
+name: Portfolio CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Deploy via SSH to home server
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          port: 2222
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/html/portfolio
+            git pull origin main
+
+      # Send Discord notification on deployment success
+      - name: Discord notification - Deployment success
+        if: success()
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "username": "CI/CD Bot",
+            "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+            "embeds": [{
+              "title": "✅ Portfolio Deployed",
+              "description": "Portfolio site deployed successfully.",
+              "color": 5763719,
+              "fields": [
+                { "name": "Repository", "value": "hazreemahmood/portfolio", "inline": true },
+                { "name": "Branch", "value": "main", "inline": true },
+                { "name": "Commit", "value": "'"${{ github.sha }}"'", "inline": false }
+              ],
+              "timestamp": "'"$(date -u +%Y-%m-%dT%H:%M:%SZ)"'"
+            }]
+          }' "${{ secrets.DISCORD_WEBHOOK_URL }}"
+
+      # Send Discord notification on deployment failure
+      - name: Discord notification - Deployment failed
+        if: failure()
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "username": "CI/CD Bot",
+            "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+            "embeds": [{
+              "title": "❌ Portfolio Deployment Failed",
+              "description": "Deployment failed. Check GitHub Actions for details.",
+              "color": 15548997,
+              "fields": [
+                { "name": "Repository", "value": "hazreemahmood/portfolio", "inline": true },
+                { "name": "Branch", "value": "main", "inline": true },
+                { "name": "Commit", "value": "'"${{ github.sha }}"'", "inline": false },
+                { "name": "Link", "value": "[View Logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})", "inline": false }
+              ],
+              "timestamp": "'"$(date -u +%Y-%m-%dT%H:%M:%SZ)"'"
+            }]
+          }' "${{ secrets.DISCORD_WEBHOOK_URL }}"
