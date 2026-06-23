@@ -10,7 +10,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700,800&display=swap" rel="stylesheet" />
     
     <!-- Styles -->
-    <link href="assets/css/welcome.css?v=202606160133" rel="stylesheet" />
+    <link id="theme-css" href="assets/css/welcome.css" rel="stylesheet" />
 </head>
 <body>
     <!-- Theme Switcher -->
@@ -427,6 +427,21 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/welcome.js?v=202606160133"></script>
+    <script id="theme-js" src="assets/js/welcome.js"></script>
+    <script>
+        // Auto-update version parameter for cache busting
+        (function() {
+            const timestamp = Date.now();
+            const cssLink = document.getElementById('theme-css');
+            const jsScript = document.getElementById('theme-js');
+            
+            if (cssLink) {
+                cssLink.href = 'assets/css/welcome.css?v=' + timestamp;
+            }
+            if (jsScript) {
+                jsScript.src = 'assets/js/welcome.js?v=' + timestamp;
+            }
+        })();
+    </script>
 </body>
 </html>
