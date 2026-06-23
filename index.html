@@ -10,9 +10,46 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700,800&display=swap" rel="stylesheet" />
     
     <!-- Styles -->
-    <link href="/assets/css/welcome.css?v=202606160133" rel="stylesheet" />
+    <link href="assets/css/welcome.css?v=202606160133" rel="stylesheet" />
 </head>
 <body>
+    <!-- Theme Switcher -->
+    <div class="theme-switcher" id="theme-switcher">
+        <button class="theme-btn active" data-theme="grey" title="Black & Grey">
+            <span class="theme-color" style="background: #999999;"></span>
+        </button>
+        <button class="theme-btn" data-theme="purple" title="Purple/Blue">
+            <span class="theme-color" style="background: linear-gradient(135deg, #667eea, #764ba2);"></span>
+        </button>
+        <button class="theme-btn" data-theme="green" title="Green/Emerald">
+            <span class="theme-color" style="background: linear-gradient(135deg, #10b981, #34d399);"></span>
+        </button>
+        <button class="theme-btn" data-theme="orange" title="Orange/Amber">
+            <span class="theme-color" style="background: linear-gradient(135deg, #f59e0b, #fbbf24);"></span>
+        </button>
+    </div>
+
+    <!-- Scan Line Effect -->
+    <div class="scan-line" id="scan-line"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-core"></div>
+            <div class="loader-particles" id="loader-particles"></div>
+            <div class="loader-text">
+                <div class="loader-title">INITIALIZING</div>
+                <div class="loader-status" id="loader-status">Loading neural interface...</div>
+                <div class="loader-progress">
+                    <div class="loader-progress-bar" id="loader-progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Background -->
     <div class="bg-grid"></div>
     <div class="orb orb-1"></div>
@@ -115,6 +152,15 @@
             <div class="journey-badge">🏆 Career Timeline</div>
             <h2>The <span>Journey</span> So Far</h2>
             <p>From CodeIgniter to Laravel, from intern to lead — every role, every line of code</p>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="journey-nav" id="journey-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+            <div class="nav-dot" data-index="3"></div>
+            <div class="nav-dot" data-index="4"></div>
         </div>
 
         <!-- Job Cards -->
@@ -381,6 +427,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/assets/js/welcome.js?v=202606160133"></script>
+    <script src="assets/js/welcome.js?v=202606160133"></script>
 </body>
 </html>
