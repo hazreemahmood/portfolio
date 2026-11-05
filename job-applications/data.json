@@ -1,6 +1,6 @@
 {
   "periodStart": "2026-08-06",
-  "checkedOn": "2026-11-05",
+  "checkedOn": "2026-11-06",
   "timezone": "Asia/Kuala_Lumpur",
   "schedule": "Hourly check; one successful update per Malaysia calendar day",
   "applications": [
@@ -303,5 +303,6 @@
       "note": "Senior Software Engineer screening submitted on 5 November.",
       "url": "https://mail.google.com/mail/u/0/#all/1a1a996d621f05c7"
     }
-  ]
+  ],
+  "checkedAt": "2026-11-05T23:15:33+00:00"
 }
