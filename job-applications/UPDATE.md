@@ -2,7 +2,7 @@
 
 The scheduled task reads Gmail through the connected Gmail plugin, updates `data.json`, runs `node job-applications/build.mjs`, then commits and pushes only dashboard files to `main`. The existing GitHub Actions pipeline deploys the site. No Gmail credentials belong in this repository.
 
-Schedule: daily at 09:00 Asia/Kuala_Lumpur. The local machine must be awake, online, with the app running and the Gmail plugin connected.
+Schedule: check at the start of each hour on this Mac; complete at most one successful Gmail review per Asia/Kuala_Lumpur calendar day. After fetching safely, skip Gmail and rebuilding when `checkedOn` is today and that update is already pushed and deployed. If publication is pending, finish it instead of repeating the Gmail review. Failed reviews may retry on the next hourly check. The local machine must be awake, online, with the app running and the Gmail plugin connected.
 
 ## Data rules
 

@@ -2,7 +2,7 @@
   "periodStart": "2026-08-06",
   "checkedOn": "2026-11-05",
   "timezone": "Asia/Kuala_Lumpur",
-  "schedule": "Daily at 9 am Malaysia time",
+  "schedule": "Hourly check; one successful update per Malaysia calendar day",
   "applications": [
     {
       "id": "application-001",
