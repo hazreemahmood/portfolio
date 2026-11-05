@@ -1,0 +1,307 @@
+{
+  "periodStart": "2026-08-06",
+  "checkedOn": "2026-11-05",
+  "timezone": "Asia/Kuala_Lumpur",
+  "schedule": "Daily at 9 am Malaysia time",
+  "applications": [
+    {
+      "id": "application-001",
+      "company": "Hays",
+      "role": "Senior Software Engineer",
+      "status": "silent",
+      "note": "Applied 4 Nov · too recent to chase",
+      "appliedOn": "2026-11-04",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-002",
+      "company": "Rooftop Energy",
+      "role": "Full Stack Engineer",
+      "status": "silent",
+      "note": "Applied 4 Nov · too recent to chase",
+      "appliedOn": "2026-11-04",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-003",
+      "company": "AirAsia",
+      "role": "Senior Software Engineer",
+      "status": "progress",
+      "note": "Screening submitted 5 Nov",
+      "appliedOn": "2026-11-05",
+      "hadNextStep": true
+    },
+    {
+      "id": "application-004",
+      "company": "CS Malaysia",
+      "role": "PHP Developer",
+      "status": "silent",
+      "note": "Applied 16 Oct · no later update found",
+      "appliedOn": "2026-10-17",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-005",
+      "company": "Abbott",
+      "role": "IT Technical Project Manager / IT Specialist",
+      "status": "rejected",
+      "note": "Rejected 14 Oct · requisition 31150345",
+      "appliedOn": "2026-09-14",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-006",
+      "company": "Experian",
+      "role": "PHP Developer",
+      "status": "progress",
+      "note": "Assessment feedback 8 Oct · follow up",
+      "appliedOn": "2026-09-08",
+      "hadNextStep": true
+    },
+    {
+      "id": "application-007",
+      "company": "ARBA Travel",
+      "role": "Full Stack Developer",
+      "status": "rejected",
+      "note": "Form requested, then rejected 7 Oct",
+      "appliedOn": "2026-10-01",
+      "hadNextStep": true
+    },
+    {
+      "id": "application-008",
+      "company": "NPCE Group KL",
+      "role": "Assistant Manager Application Support",
+      "status": "silent",
+      "note": "Applied 30 Sep · receipt only",
+      "appliedOn": "2026-09-30",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-009",
+      "company": "Solve IT",
+      "role": "Technical Implementation Manager",
+      "status": "silent",
+      "note": "Applied 30 Sep · receipt only",
+      "appliedOn": "2026-09-30",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-010",
+      "company": "CTI Group HK Limited",
+      "role": "Project Manager – Software Development",
+      "status": "silent",
+      "note": "Applied 29 Sep · receipt only",
+      "appliedOn": "2026-09-29",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-011",
+      "company": "Synopsis",
+      "role": "IT Demand & Project Manager",
+      "status": "silent",
+      "note": "Applied 29 Sep · receipt only",
+      "appliedOn": "2026-09-29",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-012",
+      "company": "Fuku",
+      "role": "Technical Project Manager",
+      "status": "silent",
+      "note": "Applied 29 Sep · duplicate receipts combined",
+      "appliedOn": "2026-09-29",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-013",
+      "company": "PERSOL APAC",
+      "role": "Team Lead",
+      "status": "silent",
+      "note": "Applied 14 Sep · no matched later update",
+      "appliedOn": "2026-09-15",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-014",
+      "company": "Gamuda",
+      "role": "Project Manager",
+      "status": "silent",
+      "note": "Applied 14 Sep · receipt only",
+      "appliedOn": "2026-09-15",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-015",
+      "company": "Prudential",
+      "role": "Technical Manager",
+      "status": "silent",
+      "note": "Applied 14 Sep · receipt only",
+      "appliedOn": "2026-09-14",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-016",
+      "company": "Esker",
+      "role": "Technical Lead (Esker Delivery Hub)",
+      "status": "likely",
+      "note": "Four-week no-response window passed",
+      "appliedOn": "2026-09-14",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-017",
+      "company": "Lotus’s Malaysia",
+      "role": "Technical Program Manager – Backend Core IT Applications",
+      "status": "silent",
+      "note": "Applied 14 Sep · receipt only",
+      "appliedOn": "2026-09-14",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-018",
+      "company": "Hong Leong Bank",
+      "role": "Role not specified in receipt",
+      "status": "silent",
+      "note": "Receipt 14 Sep · no later update found",
+      "appliedOn": "2026-09-14",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-019",
+      "company": "HEYJOM",
+      "role": "Tech Lead",
+      "status": "silent",
+      "note": "Applied 10 Sep · receipt only",
+      "appliedOn": "2026-09-10",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-020",
+      "company": "JXING Tech Group",
+      "role": "Senior Full-Stack Developer / Technical Consultant",
+      "status": "rejected",
+      "note": "Interview arranged · rejected 1 Oct",
+      "appliedOn": "2026-09-07",
+      "hadNextStep": true
+    },
+    {
+      "id": "application-021",
+      "company": "EY",
+      "role": "Technology Consulting – Full Stack Developer",
+      "status": "silent",
+      "note": "Applied 8 Sep · receipt only",
+      "appliedOn": "2026-09-08",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-022",
+      "company": "Astro",
+      "role": "Sports, Application Developer (Full-Time Contract)",
+      "status": "silent",
+      "note": "Applied 8 Sep · receipt only",
+      "appliedOn": "2026-09-08",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-023",
+      "company": "Randstad Malaysia",
+      "role": "PHP Laravel Developer (3–5 Years)",
+      "status": "silent",
+      "note": "Applied 8 Sep MYT · receipt only",
+      "appliedOn": "2026-09-08",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-024",
+      "company": "MUDIO",
+      "role": "Full Stack Developer",
+      "status": "silent",
+      "note": "Applied 7 Sep · receipt only",
+      "appliedOn": "2026-09-07",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-025",
+      "company": "UpGrowth HR",
+      "role": "Backend Developer, Senior",
+      "status": "silent",
+      "note": "Applied 7 Sep · receipt only",
+      "appliedOn": "2026-09-07",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-026",
+      "company": "CS Malaysia",
+      "role": "Backend Developer",
+      "status": "silent",
+      "note": "Applied 7 Sep · distinct application",
+      "appliedOn": "2026-09-07",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-027",
+      "company": "AA Aviation",
+      "role": "Senior System Support Executive",
+      "status": "rejected",
+      "note": "Rejected 17 Aug",
+      "appliedOn": "2026-08-12",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-028",
+      "company": "MCMC",
+      "role": "Senior Executive, Full-Stack Developer",
+      "status": "silent",
+      "note": "Applied 13 Aug MYT · receipt only",
+      "appliedOn": "2026-08-13",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-029",
+      "company": "City Coin Laundry",
+      "role": "Web & App Programmer",
+      "status": "silent",
+      "note": "Applied 12 Aug MYT · receipt only",
+      "appliedOn": "2026-08-12",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-030",
+      "company": "Spark Mars",
+      "role": "IT (Full-stack Developer)",
+      "status": "portal",
+      "note": "Employer message 12 Aug · check Maukerja",
+      "appliedOn": "2026-08-12",
+      "hadNextStep": false
+    },
+    {
+      "id": "application-031",
+      "company": "MSP Hitect",
+      "role": "PHP Laravel Developer",
+      "status": "silent",
+      "note": "Submitted via iitjobs 12 Aug MYT",
+      "appliedOn": "2026-08-12",
+      "hadNextStep": false
+    }
+  ],
+  "followUps": [
+    {
+      "company": "Experian",
+      "action": "Follow up now",
+      "note": "Assessment feedback arrived on 8 October. No final hiring decision found.",
+      "url": "https://mail.google.com/mail/u/0/#all/1a11735dcb362a3a"
+    },
+    {
+      "company": "Spark Mars",
+      "action": "Read the employer’s message",
+      "note": "Maukerja notified you of a reply on 12 August. The message itself is inside the app.",
+      "url": "https://mail.google.com/mail/u/0/#all/19ff475cb9b9b578"
+    },
+    {
+      "company": "AirAsia",
+      "action": "Await screening review",
+      "note": "Senior Software Engineer screening submitted on 5 November.",
+      "url": "https://mail.google.com/mail/u/0/#all/1a1a996d621f05c7"
+    }
+  ]
+}
