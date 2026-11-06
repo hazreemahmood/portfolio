@@ -1,6 +1,6 @@
 {
   "periodStart": "2026-08-06",
-  "checkedOn": "2026-11-06",
+  "checkedOn": "2026-11-07",
   "timezone": "Asia/Kuala_Lumpur",
   "schedule": "Hourly check; one successful update per Malaysia calendar day",
   "applications": [
@@ -286,6 +286,12 @@
   ],
   "followUps": [
     {
+      "company": "Manulife",
+      "action": "Complete your application",
+      "note": "Senior Software Engineer application is incomplete, according to the reminder received on 6 November. Not counted as submitted.",
+      "url": "https://mail.google.com/mail/u/0/#all/1a1b177221c06408"
+    },
+    {
       "company": "Experian",
       "action": "Follow up now",
       "note": "Assessment feedback arrived on 8 October. No final hiring decision found.",
@@ -296,13 +302,7 @@
       "action": "Read the employer’s message",
       "note": "Maukerja notified you of a reply on 12 August. The message itself is inside the app.",
       "url": "https://mail.google.com/mail/u/0/#all/19ff475cb9b9b578"
-    },
-    {
-      "company": "AirAsia",
-      "action": "Await screening review",
-      "note": "Senior Software Engineer screening submitted on 5 November.",
-      "url": "https://mail.google.com/mail/u/0/#all/1a1a996d621f05c7"
     }
   ],
-  "checkedAt": "2026-11-05T23:15:33+00:00"
+  "checkedAt": "2026-11-06T18:02:02+00:00"
 }
