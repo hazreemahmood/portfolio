@@ -1,6 +1,6 @@
 {
   "periodStart": "2026-08-06",
-  "checkedOn": "2026-11-09",
+  "checkedOn": "2026-11-10",
   "timezone": "Asia/Kuala_Lumpur",
   "schedule": "Hourly check; one successful update per Malaysia calendar day",
   "applications": [
@@ -288,8 +288,8 @@
     {
       "company": "Manulife",
       "action": "Complete your application",
-      "note": "Senior Software Engineer application is incomplete, according to the reminder received on 6 November. Not counted as submitted.",
-      "url": "https://mail.google.com/mail/u/0/#all/1a1b177221c06408"
+      "note": "Manulife sent another reminder on 9 November to complete the Senior Software Engineer application.",
+      "url": "https://mail.google.com/mail/u/0/#all/1a1c0ea05a84cd4e"
     },
     {
       "company": "Experian",
@@ -304,5 +304,5 @@
       "url": "https://mail.google.com/mail/u/0/#all/19ff475cb9b9b578"
     }
   ],
-  "checkedAt": "2026-11-09T00:25:06+00:00"
+  "checkedAt": "2026-11-09T20:57:03+00:00"
 }
